@@ -1,0 +1,2 @@
+# goutils
+Utilities für Golang
