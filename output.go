@@ -1,13 +1,16 @@
-
 package goutils
 
 import (
-	"bufio";   "fmt";   "os";   "reflect";   "strings"
+	"bufio"
+	"fmt"
+	"os"
+	"reflect"
+	"strings"
 )
 
 // Version : which goutils used
 func Version() {
-	fmt.Println("goutils Version: 0.0.1")
+	fmt.Println("goutils Version: 1.0.0")
 }
 
 // H1 : prints a heading like html <h1>
@@ -49,6 +52,7 @@ func NewLines(n int) {
 		n--
 	}
 }
+
 // Wait : prints *** and waits for ENTER
 // this technique is inspired from the IBM Host TSO/SPF
 func Wait() {
