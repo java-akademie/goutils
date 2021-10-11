@@ -10,7 +10,7 @@ import (
 
 // Version : which goutils used
 func Version() {
-	fmt.Println("goutils Version: 1.0.0")
+	fmt.Println("goutils Version: 1.0.1")
 }
 
 // H1 : prints a heading like html <h1>
