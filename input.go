@@ -51,3 +51,30 @@ func GetRandom2(min, max int) int {
 	a := max - min + 1
 	return _randRand.Intn(a) + min
 }
+
+// GetRandomList : return a list of randoms (lotto for instance)
+func GetRandomList(number, max int) []int {
+
+	if number > max {
+		return nil
+	}
+
+	var list []int
+
+	for {
+		v:= GetRandom2(1,max)
+		dbl:=false
+		for _,val:= range list {
+			if v==val {
+				dbl=true
+				break
+			}
+		}
+		if !dbl{
+			list= append(list, v)
+		}
+		if len(list) == number {
+			return list
+		}
+	}
+}
